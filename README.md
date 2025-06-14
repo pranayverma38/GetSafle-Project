@@ -10,5 +10,5 @@ This project sets up a **containerized Node.js REST API** deployed on **AWS** us
 
 ---
 
-## 🗂 Project Structure
+
 
