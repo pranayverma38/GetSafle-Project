@@ -1,6 +1,6 @@
-# 🌐 Node.js Application Deployment on AWS (CI/CD + Docker + Terraform)
+# Node.js Application Deployment on AWS (CI/CD + Docker + Terraform)
 
-## 📌 Objective
+## Objective
 
 This project sets up a **containerized Node.js REST API** deployed on **AWS** using a **secure, scalable, and automated infrastructure**. It includes:
 - Docker containerization
@@ -10,9 +10,7 @@ This project sets up a **containerized Node.js REST API** deployed on **AWS** us
 
 ---
 
----
-
-## 1️⃣ Application: Node.js REST API
+## Application: Node.js REST API
 
 - Built with Express.js
 - Sample Endpoints: `/health`, `/users`
@@ -21,7 +19,7 @@ This project sets up a **containerized Node.js REST API** deployed on **AWS** us
 
 ---
 
-## 2️⃣ Docker: Containerization
+## Docker: Containerization
 
 - **Dockerfile** uses a minimal `node:alpine` base image
 - App runs as a **non-root user**
@@ -30,7 +28,7 @@ This project sets up a **containerized Node.js REST API** deployed on **AWS** us
 
 ---
 
-## 3️⃣ Infrastructure: Terraform on AWS
+## Infrastructure: Terraform on AWS
 
 - **Modules** provision:
   - VPC (public/private subnets)
@@ -43,7 +41,7 @@ This project sets up a **containerized Node.js REST API** deployed on **AWS** us
 
 ---
 
-## 4️⃣ CI/CD Pipeline: GitHub Actions
+## CI/CD Pipeline: GitHub Actions
 
 The CI/CD pipeline (in `.github/workflows/ci-cd.yml`) includes:
 
@@ -54,7 +52,7 @@ The CI/CD pipeline (in `.github/workflows/ci-cd.yml`) includes:
 
 ---
 
-## 5️⃣ High Availability & Load Balancing 🔁
+## High Availability & Load Balancing
 
 This system is designed for **zero-downtime deployments** and **auto-scaling**.
 
