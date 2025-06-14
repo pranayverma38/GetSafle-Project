@@ -66,7 +66,7 @@ This system is designed for **zero-downtime deployments** and **auto-scaling**.
   - Instances failing health checks are removed from ALB routing
 
 ### 📌 Terraform Highlights
-```hcl
+`hcl
 resource "aws_autoscaling_group" "app_asg" {
   desired_capacity = 2
   max_size         = 4
@@ -80,7 +80,7 @@ resource "aws_lb_target_group" "app_tg" {
     healthy_threshold   = 2
     unhealthy_threshold = 2
   }
-}
+}`
 
 ---
 
