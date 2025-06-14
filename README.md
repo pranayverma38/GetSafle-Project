@@ -82,5 +82,52 @@ resource "aws_lb_target_group" "app_tg" {
   }
 }
 
+---
+
+# Monitoring and Alerts
+
+# Tools Used
+Amazon CloudWatch: Default monitoring
+
+Optional: Self-hosted Prometheus + Grafana
+
+# Metrics Collected
+EC2 Instances: CPU, memory, disk
+
+Application: Request rates, 4xx/5xx error rates
+
+Load Balancer: Latency, Target Health, Request Count
+
+Database (RDS): Connections, CPU usage, slow queries
+
+# Grafana Dashboard
+Custom dashboards for:
+
+Request latency
+
+HTTP status code distribution
+
+Memory usage
+
+Can be hosted via:
+
+EC2 + Docker
+
+Amazon Managed Grafana
+
+# Alerts
+CloudWatch Alarms:
+
+High CPU usage
+
+5xx error spike
+
+Memory thresholds
+
+Notifications via:
+
+Amazon SNS to Email or Slack webhook
+
+Can integrate with PagerDuty or OpsGenie
 
 
